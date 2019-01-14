@@ -1,5 +1,5 @@
 public class Sort {
-    private static void sort(int[] array, Comparator comp) {
+    private static void sort(int[] array, NewComparator comp) {
         for (int gap = array.length / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < array.length; i++) {
                 int val = array[i];
@@ -14,13 +14,16 @@ public class Sort {
 
     public static void main(String[] args){
         int[] array = {1,5,2,4,10,6,0,3,10};
-        Comparator comp = new Comparator();
-        comp = new Comparator() {
-            @Override
-            public int compare(int a, int b) {
-                return -super.compare(a, b);
-            }
-        };
+        NewComparator  comp = new NewComparator();
+ //       comp = new Comparator(){
+ //           @Override
+ //           public int compare (int a, int b){
+ //             return -super.compare(a,b);
+  //          }
+ //       };
+
+
+
 
         //Change your code here
 
