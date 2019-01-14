@@ -1,5 +1,5 @@
 public class Sort {
-    private static void sort(int[] array, NewComparator comp) {
+    private static void sort(int[] array, Comparator comp) {
         for (int gap = array.length / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < array.length; i++) {
                 int val = array[i];
